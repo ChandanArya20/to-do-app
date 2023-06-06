@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #103049;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoApp{
+  margin-top: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+img{
+  height: 100px;
+  margin-bottom: 5px;
+}
+.inputContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.inputContainer input{
+  padding: 10px 40px;
+  background-color: #fff;
+  color: rgb(58, 57, 57);
+  font-size: larger;
+  border: none;
+  border-radius: 10px;
+  border:1px solid white ;
+}
+input:focus{
+  /* border-color: blue; */
+  outline: none;
+}
+.inputIcon {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-left: -30px ;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.item-container{
+  /* border:1px solid black; */
+  margin-top:15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item{
+  margin-top: 10px;
+  display: flex;
+  width:310px;
+  height: 43px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.item h4{
+  margin-left: 7px;
+  color: black;
+  background-color: #fff;
+}
+.delete-icon{
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: larger;
+  padding: 15px opx 15px opx;
+}
+.deleteAllBtn{
+  display: flex;
+  justify-content: center;
+}
+.deleteAllBtn button{
+  margin-top: 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  transition-duration: 300ms;
+}
+.deleteAllBtn button:hover{
+  background-color: #b11d1d;
+  color: #ffffff;
+  cursor: pointer;
 }
